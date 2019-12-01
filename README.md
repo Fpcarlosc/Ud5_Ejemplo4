@@ -1,7 +1,7 @@
 # Ud5_Ejemplo4
 _Ejemplo 4 de la Unidad 5._ 
 
-Vamos a implementar una apliación en la que haremos uso de _ListFragment_. De esta clase heredará el _Fragment_ principal que contendrá 
+Vamos a implementar una aplicación en la que haremos uso de _ListFragment_. De esta clase heredará el _Fragment_ principal que contendrá 
 un elemento _ListView_ con diferentes nombres de robots famosos. Al pulsar en uno de ellos mostraremos su nombre otro _Fragment_.
 
 Gracias a que vamos a utilizar _Fragments_ podemos implementar el ejemplo, a la vez, tanto para el dispositivo en posición normal, donde
@@ -11,7 +11,7 @@ Gracias a que vamos a utilizar _Fragments_ podemos implementar el ejemplo, a la 
  
  ## Paso 1: Creación de los _layouts_
  
-El primer paso será crear los _layouts_ tanto para el dipositivo en posición normal como rotado.
+El primer paso será crear los _layouts_ tanto para el dispositivo en posición normal como rotado.
 
 ### Dispositivo en posición normal
 Para la posición normal del dispositivo tenemos los siguientes _layouts_:
@@ -175,7 +175,7 @@ creamos el _ListAdapter_, se lo asignamos al _ListFragment_ y obtenemos la _List
     }
 }
 ```
-En este _Fragment_ es donde mostraremos el nombre del robot seleccionado. Para ello tendremos que sobreescribir dos métodos: _onCreateView_ 
+En este _Fragment_ es donde mostraremos el nombre del robot seleccionado. Para ello tendremos que sobrescribir dos métodos: _onCreateView_ 
 para "inflar" el _layout_ del _Fragment_ y _onViewCreated_ para crear el _bundle_ y mostrar el nombre (_mostrarRobotSeleccionado_) en función de la clave. 
 
 ## Implementación de _MainActivity.java_
@@ -294,5 +294,5 @@ En esta actividad tendremos dos casos:
  iremos añadiendo o eliminando en la transacción dependiendo de cuál de los dos debe ser mostrado.
 2. El dispositivo está rotado: En este caso añadimos los dos _Fragments_ a la transacción para mostrarlos a la vez.
 
-Para ambos casos asignamos un _Listener_ que muestre el nombre en _FragmentDetalle_, si está rotado simplemente lo mostrarmos y sino 
+Para ambos casos asignamos un _Listener_ que muestre el nombre en _FragmentDetalle_, si está rotado simplemente lo mostramos y sino 
 creamos el _bundle_ y lo reemplazamos en la transacción.
